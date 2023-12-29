@@ -3,9 +3,10 @@
 This JavaScript code performs a basic financial analysis on a dataset representing monthly Profit/Losses over a period of time.
 
 ## Usage
+Open Console to see the results
 
 ![screen](https://github.com/kamilawroblewska/Console-Finances/blob/main/console-finances-screenshot.png?raw=true)
-Open Console to see the results
+
 
 ## Analysis Results
 
