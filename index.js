@@ -122,8 +122,9 @@ for (var i = 1; i < numberOfMonths; i++) {
 console.log(
   "Greatest Increase in Profits/Losses: " +
     greatestIncrease.date +
-    " $" +
-    greatestIncrease.amount
+    " ($" +
+    greatestIncrease.amount +
+    ")"
 );
 // Calculated the greatest decrease
 var greatestDecrease = {
@@ -139,8 +140,9 @@ for (var i = 1; i < numberOfMonths; i++) {
   }
 }
 console.log(
-  "Greatest Increase in Profits/Losses: " +
+  "Greatest Decrease in Profits/Losses: " +
     greatestDecrease.date +
-    " $" +
-    greatestDecrease.amount
+    " ($" +
+    greatestDecrease.amount +
+    ")"
 );
