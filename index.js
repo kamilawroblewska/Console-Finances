@@ -88,6 +88,7 @@ var finances = [
 ];
 
 console.log("Financial Analysis");
+console.log("-------------------------------------------");
 // Calculated total number of months
 var numberOfMonths = finances.length;
 console.log("Total Months: " + numberOfMonths);
@@ -106,5 +107,40 @@ averageChange /= numberOfMonths - 1;
 console.log("Average Change: " + averageChange.toFixed(2));
 
 // Calculated the greatest increase
+var greatestIncrease = {
+  date: "",
+  amount: 0,
+};
 
+for (var i = 1; i < numberOfMonths; i++) {
+  var difference = finances[i][1] - finances[i - 1][1];
+  if (difference > greatestIncrease.amount) {
+    greatestIncrease.date = finances[i][0];
+    greatestIncrease.amount = difference;
+  }
+}
+console.log(
+  "Greatest Increase in Profits/Losses: " +
+    greatestIncrease.date +
+    " $" +
+    greatestIncrease.amount
+);
 // Calculated the greatest decrease
+var greatestDecrease = {
+  date: "",
+  amount: 0,
+};
+
+for (var i = 1; i < numberOfMonths; i++) {
+  var difference = finances[i][1] - finances[i - 1][1];
+  if (difference < greatestDecrease.amount) {
+    greatestDecrease.date = finances[i][0];
+    greatestDecrease.amount = difference;
+  }
+}
+console.log(
+  "Greatest Increase in Profits/Losses: " +
+    greatestDecrease.date +
+    " $" +
+    greatestDecrease.amount
+);
