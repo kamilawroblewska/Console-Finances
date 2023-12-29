@@ -86,3 +86,19 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+console.log("Financial Analysis");
+// Calculated total number of months 
+var numberOfMonths = finances.length;
+console.log("Total Months: " + numberOfMonths);
+// Calculated total amount of Profit/Losses 
+var netTotal = 0;
+for (var i = 0; i < finances.length; i++){
+  netTotal += finances[i][1];
+}
+console.log("Total: $" + netTotal)
+// Calculated average of the changes in Profit/Losses over the entire period 
+
+// Calculated the greatest increase 
+
+// Calculated the greatest decrease 
